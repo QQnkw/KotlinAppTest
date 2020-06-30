@@ -3,11 +3,9 @@ package com.kotlin.kotlinapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.kotlin.kotlinapp.databinding.ActivityMainBinding
-import com.kotlin.kotlinapp.jetpack.DataBindingActivity
-import com.kotlin.kotlinapp.jetpack.ViewBindingActivity
+import com.kotlin.kotlinapp.jetpack.binding.DataBindingActivity
+import com.kotlin.kotlinapp.jetpack.binding.ViewBindingActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_view_binding.*
 
 class MainActivity : AppCompatActivity() {
     companion object {

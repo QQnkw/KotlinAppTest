@@ -1,4 +1,4 @@
-package com.kotlin.kotlinapp.jetpack
+package com.kotlin.kotlinapp.jetpack.binding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

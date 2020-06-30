@@ -1,4 +1,4 @@
-package com.kotlin.kotlinapp.jetpack
+package com.kotlin.kotlinapp.jetpack.binding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
