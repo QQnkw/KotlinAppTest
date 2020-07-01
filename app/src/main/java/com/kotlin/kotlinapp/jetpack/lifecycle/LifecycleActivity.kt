@@ -18,5 +18,6 @@ class LifecycleActivity : AppCompatActivity() {
         myLocationListener = MyLocationListener(this, lifecycle) { location ->
             // update UI
         }
+        MyLifecycleOwner()
     }
 }

@@ -5,12 +5,11 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 
 class MyLifecycleOwner : LifecycleOwner {
-    private lateinit var lifecycleRegistry: LifecycleRegistry
+    private var lifecycleRegistry: LifecycleRegistry = LifecycleRegistry(this)
 
     override fun getLifecycle(): Lifecycle = lifecycleRegistry
 
     init {
-        lifecycleRegistry = LifecycleRegistry(this)
         lifecycleRegistry.currentState = Lifecycle.State.CREATED
     }
 
