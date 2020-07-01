@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kotlin.kotlinapp.jetpack.binding.DataBindingActivity
 import com.kotlin.kotlinapp.jetpack.binding.ViewBindingActivity
+import com.kotlin.kotlinapp.jetpack.livedata.LiveDataActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_data_binding.setOnClickListener {
             startActivity(Intent(this, DataBindingActivity::class.java))
+        }
+        btn_live_data.setOnClickListener {
+            startActivity(Intent(this,LiveDataActivity::class.java))
         }
     }
 }

@@ -30,6 +30,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Data_Binding" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_live_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Live_Data" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
