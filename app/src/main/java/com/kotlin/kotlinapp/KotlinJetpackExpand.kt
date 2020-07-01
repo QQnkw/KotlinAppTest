@@ -1,6 +1,6 @@
 package com.kotlin.kotlinapp
 
-class JetpackLib {
+class KotlinJetpackExpand {
     /**
      * Collection KTX
      * Collection 扩展程序包含在 Android 的节省内存的集合库中使用的效用函数，
