@@ -4,24 +4,25 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.kotlin.kotlinapp.jetpack.room.entity.AEntity
 
 @Dao
 interface ADao {
-    @Query("SELECT * FROM a")
-    fun getAll(): List<A>
+    @Query("SELECT * FROM AEntity")
+    fun getAll(): List<AEntity>
 
-    @Query("SELECT * FROM a WHERE uid IN (:aIds)")
-    fun loadAllByIds(aIds: IntArray): List<A>
+    @Query("SELECT * FROM aentity WHERE uid IN (:aIds)")
+    fun loadAllByIds(aIds: IntArray): List<AEntity>
 
     @Query(
         "SELECT * FROM user WHERE first_name LIKE :first AND " +
                 "last_name LIKE :last LIMIT 1"
     )
-    fun findByName(first: String, last: String): A
+    fun findByName(first: String, last: String): AEntity
 
     @Insert
-    fun insertAll(vararg users: A)
+    fun insertAll(vararg users: AEntity)
 
     @Delete
-    fun delete(user: A)
+    fun delete(user: AEntity)
 }
