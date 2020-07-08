@@ -5,6 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.kotlin.kotlinapp.jetpack.room.entity.AEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ADao {
@@ -25,4 +26,10 @@ interface ADao {
 
     @Delete
     fun delete(user: AEntity)
+
+    @Query("SELECT * FROM AEntity")
+    fun getAList(): Flow<List<AEntity>>
+
+    @Query("SELECT * FROM AEntity WHERE a1")
+    suspend fun getFirstField(): List<String>
 }
