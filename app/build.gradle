@@ -70,7 +70,9 @@ dependencies {
     //可选-Guava对Room的支持，包括Optional和ListenableFuture
 //    implementation "androidx.room:room-guava:$room_version"
 
+    //work组件
     def work_version = "2.3.4"
+    // Kotlin + coroutines
     implementation "androidx.work:work-runtime-ktx:$work_version"
     // (Java only)
 //    implementation "androidx.work:work-runtime:$work_version"
