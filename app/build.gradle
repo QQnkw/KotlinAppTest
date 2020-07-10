@@ -58,16 +58,28 @@ dependencies {
     //viewModel组件
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
+    def room_version = "2.2.5"
     //Room组件
-    implementation "androidx.room:room-runtime:2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
     //kotlin使用kapt代替annotationProcessor,并且添加kapt插件
-    kapt "androidx.room:room-compiler:2.2.5"
+    kapt "androidx.room:room-compiler:$room_version"
     //可选-kotlin对room的支持
-    implementation "androidx.room:room-ktx:2.2.5"
+    implementation "androidx.room:room-ktx:$room_version"
     //可选-rxjava对room的支持
-//    implementation "androidx.room:room-rxjava2:2.2.5"
+//    implementation "androidx.room:room-rxjava2:$room_version"
     //可选-Guava对Room的支持，包括Optional和ListenableFuture
-//    implementation "androidx.room:room-guava:2.2.5"
+//    implementation "androidx.room:room-guava:$room_version"
+
+    def work_version = "2.3.4"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    // (Java only)
+//    implementation "androidx.work:work-runtime:$work_version"
+    // 可选 - RxJava2 support
+//    implementation "androidx.work:work-rxjava2:$work_version"
+    // 可选 - GCMNetworkManager support
+    implementation "androidx.work:work-gcm:$work_version"
+    // 可选 - Test helpers
+    androidTestImplementation "androidx.work:work-testing:$work_version"
 
     implementation 'androidx.collection:collection-ktx:1.1.0'
     implementation 'androidx.fragment:fragment-ktx:1.2.5'
@@ -76,10 +88,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
     implementation 'androidx.palette:palette-ktx:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0'
-    implementation 'androidx.room:room-ktx:2.2.5'
     implementation 'androidx.sqlite:sqlite-ktx:2.1.0'
 
-    implementation 'androidx.work:work-runtime-ktx:2.3.4'
+
 
 //    kapt 'com.android.databinding:compiler:4.0.0'
 
