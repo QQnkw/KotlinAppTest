@@ -15,11 +15,12 @@ interface ADao {
     @Query("SELECT * FROM aentity WHERE uid IN (:aIds)")
     fun loadAllByIds(aIds: IntArray): List<AEntity>
 
+    /*没有这个表,会导致运行失败
     @Query(
         "SELECT * FROM user WHERE first_name LIKE :first AND " +
                 "last_name LIKE :last LIMIT 1"
     )
-    fun findByName(first: String, last: String): AEntity
+    fun findByName(first: String, last: String): AEntity*/
 
     @Insert
     fun insertAll(vararg users: AEntity)
@@ -30,6 +31,6 @@ interface ADao {
     @Query("SELECT * FROM AEntity")
     fun getAList(): Flow<List<AEntity>>
 
-    @Query("SELECT * FROM AEntity WHERE a1")
-    suspend fun getFirstField(): List<String>
+    @Query("SELECT a1 FROM AEntity")
+    suspend fun getFirstField(): List<String>?
 }
