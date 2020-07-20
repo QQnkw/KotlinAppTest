@@ -36,8 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Live_Data" />
-<!--
-            <NumberPicker
+
+            <!--<NumberPicker
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -45,11 +45,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <TimePicker
+            <CalendarView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <CalendarView
+            <TimePicker
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />-->
         </androidx.appcompat.widget.LinearLayoutCompat>

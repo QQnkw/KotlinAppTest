@@ -10,8 +10,7 @@ import kotlinx.android.synthetic.main.activity_live_data.*
 import java.util.*
 
 class LiveDataActivity : AppCompatActivity() {
-    // Use the 'by viewModels()' Kotlin property delegate
-    // from the activity-ktx artifact
+    // Use the 'by viewModels()' Kotlin property delegate from the activity-ktx artifact
     private val model: LiveDataTestViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
