@@ -1,2 +1,2 @@
-include ':app',':HtmlSpanner'
+include ':app'
 rootProject.name = "KotlinAppTest"

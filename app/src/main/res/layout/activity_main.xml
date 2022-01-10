@@ -37,21 +37,6 @@
                 android:layout_height="wrap_content"
                 android:text="Live_Data" />
 
-            <!--<NumberPicker
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <DatePicker
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <CalendarView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TimePicker
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />-->
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
